@@ -1,0 +1,7 @@
+object Problem7 {
+  lazy val primeN: Stream[Int] = 2 #:: Stream.from(3).filter(i =>
+  ps.takeWhile(j => j * j <= i).forall(i % _ > 0))//> ps: => Stream[Int]
+
+  val r = ps(10000)                               //> r  : Int = 104743
+  
+}

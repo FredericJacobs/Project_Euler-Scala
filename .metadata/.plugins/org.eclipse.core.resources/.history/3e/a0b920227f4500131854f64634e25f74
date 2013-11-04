@@ -1,0 +1,11 @@
+object Problem7 {
+	def EratosteneSieve(s: Stream[Int]): Stream[Int] = {
+    s.head #:: EratosteneSieve(s.tail.filter(_ % s.head != 0))
+  }                                               //> EratosteneSieve: (s: Stream[Int])Stream[Int]
+  val primes = EratosteneSieve(Stream.from(2))    //> primes  : Stream[Int] = Stream(2, ?)
+  
+  // Hence, first n primes are given by
+  
+	primes(10001)                             //> res0: Stream[Int] = Stream(2, ?)
+  
+}
