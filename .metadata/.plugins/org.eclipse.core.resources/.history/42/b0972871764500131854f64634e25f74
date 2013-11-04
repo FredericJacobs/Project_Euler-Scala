@@ -1,0 +1,9 @@
+object Problem2 {
+  def fib: Stream[Long] = {
+    def tail(h: Long, n: Long): Stream[Long] = h #:: tail(n, h + n)
+    tail(0, 1)
+	}                                         //> fib: => Stream[Long]
+	
+	fib(4)                                    //> res0: Long = 2
+	
+}

@@ -1,0 +1,8 @@
+object Problem2 {
+	def fibonnaciUntilN (n: Int): List = {
+		val secondPrecedent = 1
+		val precedent = 2
+		
+		
+	}
+}

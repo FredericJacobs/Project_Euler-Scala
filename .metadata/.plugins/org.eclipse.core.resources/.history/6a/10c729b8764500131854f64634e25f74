@@ -1,0 +1,12 @@
+object Problem2 {
+  def fib: Stream[Long] = {
+    def tail(h: Long, n: Long): Stream[Long] = h #:: tail(n, h + n)
+    tail(0, 1)
+	}                                         //> fib: => Stream[Long]
+	
+	def makeFibListUntil(n: Int) = {
+		fib take n
+	}                                         //> makeFibListUntil: (n: Int)scala.collection.immutable.Stream[Long]
+
+	
+}

@@ -1,0 +1,5 @@
+object Problem2 {
+	def fibonnaciUntilN (n: Int) = {
+	
+	}
+}

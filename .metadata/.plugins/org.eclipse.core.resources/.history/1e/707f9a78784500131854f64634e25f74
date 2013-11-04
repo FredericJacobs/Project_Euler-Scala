@@ -1,0 +1,10 @@
+object Problem2 {
+  def fib(x: Long, y: Long): Stream[Long] = x #:: fib(y, x + y)
+                                                  //> fib: (x: Long, y: Long)Stream[Long]
+	def fibEvenMembersSmallerThan (n : Int) = {
+		fib(1,2).takeWhile(n => n <= n)
+	}                                         //> fibEvenMembersSmallerThan: (n: Int)Stream[Long]
+	
+	fibEvenMembersSmallerThan(4000000)        //> res0: Stream[Long] = Stream(1, ?)
+	
+}

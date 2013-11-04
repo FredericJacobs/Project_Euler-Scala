@@ -1,0 +1,17 @@
+object Problem2 {
+  def fib: Stream[Long] = {
+    def tail(h: Long, n: Long): Stream[Long] = h #:: tail(n, h + n)
+    tail(0, 1)
+	}                                         //> fib: => Stream[Long]
+	                                          //> res0: Iterable[Long] = Stream(0, ?)
+	def makeFibListUntil(n: Int) = {
+	
+	}                                         //> makeFibListUntil: (n: Int)Unit
+	
+	def fibEvenMembersSmallerThan(n: Int) = {
+		//makeFibListUntil(n).filter(_ % 2 == 0)
+	}                                         //> fibEvenMembersSmallerThan: (n: Int)Unit
+	
+	fibEvenMembersSmallerThan(4000000)
+	
+}
