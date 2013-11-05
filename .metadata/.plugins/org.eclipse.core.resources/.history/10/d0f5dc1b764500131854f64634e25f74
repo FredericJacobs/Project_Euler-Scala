@@ -1,6 +1,0 @@
-object Problem2 {
-	def fibonnaciUntilN (n: Int) = {
-		val secondPrecedent = 1
-		val precedent =
-	}
-}

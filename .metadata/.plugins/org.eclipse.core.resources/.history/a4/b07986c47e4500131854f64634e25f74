@@ -1,8 +1,0 @@
-object Problem7 {
-	def sieve(s: Stream[Int]): Stream[Int] = {       //> Welcome to the Scala worksheet
-    s.head #:: sieve(s.tail.filter(_ % s.head != 0))
-  }
-
-  // All primes as a lazy sequence
-  val primes = sieve(Stream.from(2))
-}

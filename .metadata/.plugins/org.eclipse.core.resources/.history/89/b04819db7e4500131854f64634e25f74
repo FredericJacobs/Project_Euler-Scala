@@ -1,6 +1,0 @@
-object Problem7 {
-	def EratosteneSieve(s: Stream[Int]): Stream[Int] = {
-    s.head #:: EratosteneSieve(s.tail.filter(_ % s.head != 0))
-  }
-  val primes = EratosteneSsieve(Stream.from(2))
-}
