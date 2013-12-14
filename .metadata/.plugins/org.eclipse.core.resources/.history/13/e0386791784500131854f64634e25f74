@@ -1,9 +1,0 @@
-object Problem2 {
-  def fib(x: Long, y: Long): Stream[Long] = x #:: fib(y, x + y)
-	def fibEvenMembersSmallerThan (n : Int) = {
-		fib(1,2).takeWhile(x => x <= n).filter(
-	}
-	
-	fibEvenMembersSmallerThan(4000000)
-	
-}

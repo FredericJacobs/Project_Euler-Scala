@@ -1,3 +1,0 @@
-object Problem6 {
-  def sumOfTheSquares (n : Int) = (1 to n)        //> sumOfTheSquares: (n: Int)scala.collection.immutable.Range.Inclusive
-}

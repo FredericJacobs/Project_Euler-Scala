@@ -1,6 +1,0 @@
-object Problem1 {
-  def function ((startRange: Int, endRange:Int))
-  val numbers = 1 to 999 toList
-	val divisibleby3or5 = numbers.filter(x => x % 3 == 0 || x % 5 ==0)
-  val sumOfThem = divisibleby3or5.reduceLeft(_+_)
-}

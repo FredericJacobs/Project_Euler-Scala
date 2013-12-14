@@ -1,6 +1,0 @@
-object Problem4 {                                 //> Welcome to the Scala worksheet
-	val r = (100 to 999).view
-        .flatMap(i => (i to 999).map(i *))
-        .filter(n => n.toString == n.toString.reverse)
-        .max
-}

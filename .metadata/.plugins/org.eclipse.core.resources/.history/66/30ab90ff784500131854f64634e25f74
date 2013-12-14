@@ -1,4 +1,0 @@
-object Problem3 {
-  findLargestPrimeFactor(n: Long) = {
-  }
-}

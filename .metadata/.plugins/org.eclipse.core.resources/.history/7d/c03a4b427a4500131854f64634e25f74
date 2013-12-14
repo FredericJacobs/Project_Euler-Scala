@@ -1,5 +1,0 @@
-object Problem3 {
-  def findLargestPrimeFactor(n: Long) = {
-  	
-  }                                               //> findLargestPrimeFactor: (n: Long)Unit
-}

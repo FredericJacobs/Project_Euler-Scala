@@ -1,8 +1,0 @@
-object Problem6 {
-  def sumOfTheSquares (n: Int) = (1 to n).map(x => x*x).sum
-                                                  //> sumOfTheSquares: (n: Int)Int
-  def squareOfTheSum (n: Int) = {                 //> squareOfTheSum: (n: Int)Int
-  val theSum = (1 to n).sum
-  
-
-}

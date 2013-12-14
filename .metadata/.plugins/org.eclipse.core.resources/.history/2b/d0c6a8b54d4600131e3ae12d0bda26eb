@@ -1,5 +1,0 @@
-object Problem4 {
-	val biggest3numbersPalindrome = (100 to 999).view.map(i => (i to 999).map(i *)).filter(n => n.toString == n.toString.reverse)
-                                                  //> biggest3numbersPalindrome  : scala.collection.SeqView[scala.collection.immut
-                                                  //| able.IndexedSeq[Int],Seq[_]] = SeqViewMF(...)
-}
