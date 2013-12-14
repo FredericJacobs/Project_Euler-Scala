@@ -1,0 +1,20 @@
+object Problem10 {
+	lazy val primeN: Stream[Int] = 2 #:: Stream.from(3).filter(i => primeN.takeWhile(j => j * j <= i).forall(i % _ > 0))
+	
+	val r = primeN.view.takeWhile(_ < 2000000).foldLeft(0L)(_ + _)
+	
+	type Histogram = Map[Int, Int]
+  type Course = List[Quiz]
+  type Result = (String, Int)
+  type Quiz = List[Result]
+  
+ 	def histogram(course: Course): Histogram = {
+    val studentsPerGrade = studentMeans(course).groupBy {
+    case (name, mean) => math.round(mean)
+  }
+  studentsPerGrade map {
+  case (grade, students) => (grade, students.size)
+   }
+  }
+	
+}
